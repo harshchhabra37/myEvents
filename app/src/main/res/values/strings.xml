@@ -2,4 +2,7 @@
     <string name="app_name">Event</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="about">THIS APP IS ALL ABOUT EVENTS.YOU CAN PARTICIPATE IN VARIOUS KINDS OF
+    EVENTS AS PER YOUR INTEREST.EACH EVENT HAS A DEADLINE BEFORE WHICH YOU HAVE TO PARTICIPATE.IT IS JUST A
+    DEMO ANDROID APP REPRESENTING EVENT MANAGEMENT AND PARTICIPATION. IF YOU WANT TO CONTACT US YOU CAN DO SO BY CLICKING THE LINK BELOW</string>
 </resources>
