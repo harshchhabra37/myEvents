@@ -4,6 +4,13 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Android-Study-Jam-Project-1/app/src/main/res/layout/activity_main.xml" value="0.12708333333333333" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/Android-Study-Jam-Project-1/app/src/main/res/layout/activity_event_list.xml" value="0.4466666666666667" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/Android-Study-Jam-Project-1/app/src/main/res/layout/activity_main.xml" value="0.1796875" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/Android-Study-Jam-Project-1/app/src/main/res/layout/fragment_about.xml" value="0.1796875" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/Android-Study-Jam-Project-1/app/src/main/res/layout/fragment_event_description.xml" value="0.1796875" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/Android-Study-Jam-Project-1/app/src/main/res/layout/fragment_event_list.xml" value="0.1796875" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/Android-Study-Jam-Project-1/app/src/main/res/layout/fragment_profile.xml" value="0.1796875" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/Android-Study-Jam-Project-1/app/src/main/res/menu/menu_item.xml" value="0.1796875" />
       </map>
     </option>
   </component>
