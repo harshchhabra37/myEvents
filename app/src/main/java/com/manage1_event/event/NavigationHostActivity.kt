@@ -28,43 +28,33 @@ class NavigationHostActivity : AppCompatActivity() {
 
 //this activity acts just as a fragment holder
 
-class NavigationHostActivity : AppCompatActivity()  {
-    lateinit var navController: NavController
-    lateinit var drawerLayout: DrawerLayout
-    lateinit var navigationView: NavigationView
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val binding: ActivityNavigationHostBinding = DataBindingUtil.setContentView(this,R.layout.activity_navigation_host)
+        val binding: ActivityNavigationHostBinding =
+            DataBindingUtil.setContentView(this, R.layout.activity_navigation_host)
 
-       buildDrawerLayout(binding)
+        buildDrawerLayout(binding)
     }
 
 
-
-  fun buildDrawerLayout(binding: ActivityNavigationHostBinding){
-       navController=this.findNavController(R.id.host_fragment)
-        drawerLayout=binding.drawerLayout
-        NavigationUI.setupActionBarWithNavController(this,navController,drawerLayout)
-        NavigationUI.setupWithNavController(binding.navigationView,navController)
+    fun buildDrawerLayout(binding: ActivityNavigationHostBinding) {
+        navController = this.findNavController(R.id.host_fragment)
+        drawerLayout = binding.drawerLayout
+        NavigationUI.setupActionBarWithNavController(this, navController, drawerLayout)
+        NavigationUI.setupWithNavController(binding.navigationView, navController)
 
     }
 
 
     override fun onSupportNavigateUp(): Boolean {
-        return NavigationUI.navigateUp(navController,drawerLayout)
-    }
-}
-
-
-
-    override fun onSupportNavigateUp(): Boolean {
-        return NavigationUI.navigateUp(navController,drawerLayout)
+        return NavigationUI.navigateUp(navController, drawerLayout)
     }
 
-    fun share(item:MenuItem){
-        val intent= Intent(Intent.ACTION_SEND).apply {
+
+
+    fun share(item: MenuItem) {
+        val intent = Intent(Intent.ACTION_SEND).apply {
             putExtra(
                 Intent.EXTRA_TEXT,
                 "Hey check out my app at: https://play.google.com/store/apps/details?id=" + BuildConfig.APPLICATION_ID
@@ -74,16 +64,17 @@ class NavigationHostActivity : AppCompatActivity()  {
         startActivity(intent)
     }
 
-    fun logout(item:MenuItem){
-Toast.makeText(application.applicationContext,"Implement logout",Toast.LENGTH_SHORT).show()
+    fun logout(item: MenuItem) {
+        Toast.makeText(application.applicationContext, "Implement logout", Toast.LENGTH_SHORT)
+            .show()
     }
 
 
-    fun contact(item: MenuItem){
+    fun contact(item: MenuItem) {
 
         val intent = Intent(Intent.ACTION_SEND).apply {
             type = "*/*"
-            putExtra(Intent.EXTRA_EMAIL, arrayOf("amanshdeep2@gmail.com",""))
+            putExtra(Intent.EXTRA_EMAIL, arrayOf("amanshdeep2@gmail.com", ""))
             putExtra(Intent.EXTRA_SUBJECT, "hello")
 
         }
@@ -91,8 +82,9 @@ Toast.makeText(application.applicationContext,"Implement logout",Toast.LENGTH_SH
             startActivity(intent)
         }
 
-        }
+    }
 }
+
 
 
 
