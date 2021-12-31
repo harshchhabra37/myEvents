@@ -1,7 +1,9 @@
-<androidx.cardview.widget.CardView android:layout_width="match_parent"
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="20dp"
-    app:cardBackgroundColor="@color/black"
+    app:cardBackgroundColor="#FF8F00"
     app:cardCornerRadius="10dp"
     app:cardElevation="10dp"
     app:layout_constraintEnd_toEndOf="parent"
@@ -9,13 +11,15 @@
     app:layout_constraintTop_toTopOf="parent"
     android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="20dp">
+        android:padding="20dp"
+        >
 
         <TextView
             android:id="@+id/nameTv"
@@ -60,6 +64,7 @@
             android:id="@+id/moreBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:backgroundTint="#D84315"
             android:text="View More"
             android:textColor="@color/white"
             android:textSize="10sp"
@@ -70,4 +75,5 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>
+
 
