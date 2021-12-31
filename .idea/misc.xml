@@ -4,6 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Android-Study-Jam-Project-1/app/src/main/res/layout/activity_main.xml" value="0.12708333333333333" />
+        <entry key="..\:/Users/laksh/AndroidStudioProjects/Android-Study-Jam-Project-1/app/src/main/res/drawable/ic_baseline_location_on_24.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/laksh/AndroidStudioProjects/Android-Study-Jam-Project-1/app/src/main/res/drawable/rounded_corner.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/laksh/AndroidStudioProjects/Android-Study-Jam-Project-1/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/laksh/AndroidStudioProjects/Android-Study-Jam-Project-1/app/src/main/res/layout/card_event.xml" value="0.25" />
+        <entry key="..\:/Users/laksh/AndroidStudioProjects/Android-Study-Jam-Project-1/app/src/main/res/layout/fragment_event.xml" value="0.25" />
+        <entry key="..\:/Users/laksh/AndroidStudioProjects/Android-Study-Jam-Project-1/app/src/main/res/layout/fragment_list.xml" value="0.2359375" />
       </map>
     </option>
   </component>
