@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Home"
+        android:id="@+id/listFragment"
+        android:icon="@drawable/ic_baseline_home_24"
+
+        />
+    <item android:title="Profile"
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/profile"/>
+
+    <item android:title="Share"
+        android:icon="@drawable/ic_baseline_share_24"
+      android:onClick="share"
+        />
+
+    <item android:title="About"
+        android:id="@+id/aboutFragment"
+        android:icon="@drawable/information"/>
+
+    <item android:title="Contact"
+        android:onClick="contact"
+        android:icon="@drawable/ic_baseline_contact_support_24"/>
+
+
+    <item android:title="Logout"
+        android:icon="@drawable/logout"
+        android:onClick="logout"/>
+</menu>
