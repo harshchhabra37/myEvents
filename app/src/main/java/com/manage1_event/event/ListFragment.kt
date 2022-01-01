@@ -7,8 +7,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.get
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.RecyclerView
 import com.manage1_event.event.database.EventDB
 import com.manage1_event.event.database.EventTable
 import com.manage1_event.event.databinding.FragmentListBinding
@@ -17,28 +19,31 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 class ListFragment : Fragment(), EventAdapter.ButtonClicked {
-    private var _db : EventDB? = null
-    private val db get() = _db!!
+//    private var _db : EventDB? = null
+//    private val db get() = _db!!
 
     private var _binding : FragmentListBinding? = null
     private val binding get() = _binding!!
 
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-    }
+    lateinit var viewModel: ListFragmentViewModel
+//    override fun onCreate(savedInstanceState: Bundle?) {
+//        super.onCreate(savedInstanceState)
+//
+//    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
         _binding = FragmentListBinding.inflate(inflater, container, false)
+        viewModel=ViewModelProvider(this).get(ListFragmentViewModel::class.java)
+        viewModel.makeTable()
 
 
-        _db = getRoomDbInstance(container!!.context)
+        //_db = getRoomDbInstance(container!!.context)
 
-//
+
 //        val event1 = EventTable(name = "Birthday Party", date = "25-03-2022", seatsLeft = 100, desc = "Bring Your own Beer Birthday Party for my friend come and chill with us", place = "Delhi", cost = 1000)
 //        val event2 = EventTable(name = "Concert", date = "04-06-2022", seatsLeft = 5, desc = "Private Concert by AP Dhillon for very few people ", place = "Vijayawada", cost = 30000)
 //        val event3 = EventTable(name = "Standup Comedy", date = "02-03-2022", seatsLeft = 40, desc = "Standup Comedy by Basu on his tour throughout major cities in India", place = "Delhi", cost = 5000)
@@ -53,19 +58,24 @@ class ListFragment : Fragment(), EventAdapter.ButtonClicked {
 //            db?.getDao()?.insert(event = event4)
 //            db?.getDao()?.insert(event = event5)
 //            db?.getDao()?.insert(event = event6)
+//
 //        }
-        setAdapter()
+
+        lifecycleScope.launch(Dispatchers.Main) {
+                setAdapter()
+            }
         return binding.root
     }
 
 
     private fun setAdapter() {
-        var adapter = EventAdapter(db.getDao().read(), this)
+        //var adapter = EventAdapter(db.getDao().read(), this)
+        var adapter= EventAdapter(viewModel.db!!.getDao().read(),this)
         binding.rv.setHasFixedSize(true)
         binding.rv.adapter = adapter
     }
 
-    private fun getRoomDbInstance(context : Context) = EventDB.getInstance(context)
+   // private fun getRoomDbInstance(context : Context) = EventDB.getInstance(context)
 
     override fun onButtonClicked(event: EventTable) {
         findNavController().navigate(ListFragmentDirections.actionListFragmentToEventFragment(event.id))

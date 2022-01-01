@@ -75,7 +75,7 @@ class NavigationHostActivity : AppCompatActivity() {
         val intent = Intent(Intent.ACTION_SEND).apply {
             type = "*/*"
             putExtra(Intent.EXTRA_EMAIL, arrayOf("amanshdeep2@gmail.com", ""))
-            putExtra(Intent.EXTRA_SUBJECT, "hello")
+
 
         }
         if (intent.resolveActivity(packageManager) != null) {
