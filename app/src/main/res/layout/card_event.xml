@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="20dp"
-    app:cardBackgroundColor="#FF8F00"
+    app:cardBackgroundColor="@color/background_secondary"
     app:cardCornerRadius="10dp"
     app:cardElevation="10dp"
     app:layout_constraintEnd_toEndOf="parent"
@@ -36,7 +36,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Date"
-            android:textColor="#636363"
+            android:textColor="#1B1A1A"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@id/nameTv" />
 
@@ -64,7 +64,7 @@
             android:id="@+id/moreBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="#D84315"
+            android:backgroundTint="@color/background_tertiary"
             android:text="View More"
             android:textColor="@color/white"
             android:textSize="10sp"

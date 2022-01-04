@@ -7,8 +7,8 @@
     <fragment
         android:id="@+id/listFragment"
         android:name="com.manage1_event.event.ListFragment"
-        android:label="fragment_list"
-        tools:layout="@layout/fragment_list" >
+        android:label="Events"
+        tools:layout="@layout/fragment_list">
         <action
             android:id="@+id/action_listFragment_to_eventFragment"
             app:destination="@id/eventFragment" />
@@ -22,8 +22,8 @@
     <fragment
         android:id="@+id/eventFragment"
         android:name="com.manage1_event.event.EventFragment"
-        android:label="fragment_event"
-        tools:layout="@layout/fragment_event" >
+        android:label="Event Details"
+        tools:layout="@layout/fragment_event">
         <action
             android:id="@+id/action_eventFragment_to_listFragment"
             app:destination="@id/listFragment" />
@@ -34,7 +34,7 @@
     <fragment
         android:id="@+id/aboutFragment"
         android:name="com.manage1_event.event.AboutFragment"
-        android:label="AboutFragment"
+        android:label="About Us"
         tools:layout="@layout/fragment_about">
         <action
             android:id="@+id/action_aboutFragment_to_listFragment"
@@ -43,7 +43,7 @@
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.manage1_event.event.ProfileFragment"
-        android:label="ProfileFragment"
+        android:label="Profile"
         tools:layout="@layout/fragment_profile">
         <action
             android:id="@+id/action_profileFragment_to_listFragment"

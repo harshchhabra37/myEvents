@@ -5,11 +5,7 @@ import com.google.android.material.navigation.NavigationView
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.content.Intent
-
 import android.view.MenuItem
-import android.view.View
-import android.widget.Toast
-
 import androidx.databinding.DataBindingUtil
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.NavController
@@ -24,9 +20,6 @@ import com.manage1_event.event.databinding.ActivityNavigationHostBinding
 class NavigationHostActivity : AppCompatActivity() {
     lateinit var navController: NavController
     lateinit var drawerLayout: DrawerLayout
-
-
-//this activity acts just as a fragment holder
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -65,8 +58,9 @@ class NavigationHostActivity : AppCompatActivity() {
     }
 
     fun logout(item: MenuItem) {
-        Toast.makeText(application.applicationContext, "Implement logout", Toast.LENGTH_SHORT)
-            .show()
+        var intent = Intent(this,MainActivity::class.java)
+        startActivity(intent)
+        finish()
     }
 
 

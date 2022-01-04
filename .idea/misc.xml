@@ -3,22 +3,25 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Android-Study-Jam-Project-1/app/src/main/res/layout/activity_main.xml" value="0.12708333333333333" />
-        <entry key="..\:/Users/hp/AndroidStudioProjects/Android-Study-Jam-Project-1/app/src/main/res/drawable/ic_baseline_share_24.xml" value="0.19583333333333333" />
-        <entry key="..\:/Users/hp/AndroidStudioProjects/Android-Study-Jam-Project-1/app/src/main/res/drawable/rounded_corner.xml" value="0.19583333333333333" />
-        <entry key="..\:/Users/hp/AndroidStudioProjects/Android-Study-Jam-Project-1/app/src/main/res/layout/activity_event_list.xml" value="0.4466666666666667" />
-        <entry key="..\:/Users/hp/AndroidStudioProjects/Android-Study-Jam-Project-1/app/src/main/res/layout/activity_main.xml" value="0.1796875" />
-        <entry key="..\:/Users/hp/AndroidStudioProjects/Android-Study-Jam-Project-1/app/src/main/res/layout/activity_navigation_host.xml" value="0.1" />
-        <entry key="..\:/Users/hp/AndroidStudioProjects/Android-Study-Jam-Project-1/app/src/main/res/layout/card_event.xml" value="0.1796875" />
-        <entry key="..\:/Users/hp/AndroidStudioProjects/Android-Study-Jam-Project-1/app/src/main/res/layout/fragment_about.xml" value="0.1" />
-        <entry key="..\:/Users/hp/AndroidStudioProjects/Android-Study-Jam-Project-1/app/src/main/res/layout/fragment_event.xml" value="0.1796875" />
-        <entry key="..\:/Users/hp/AndroidStudioProjects/Android-Study-Jam-Project-1/app/src/main/res/layout/fragment_event_description.xml" value="0.1796875" />
-        <entry key="..\:/Users/hp/AndroidStudioProjects/Android-Study-Jam-Project-1/app/src/main/res/layout/fragment_event_list.xml" value="0.1796875" />
-        <entry key="..\:/Users/hp/AndroidStudioProjects/Android-Study-Jam-Project-1/app/src/main/res/layout/fragment_list.xml" value="0.14666666666666667" />
-        <entry key="..\:/Users/hp/AndroidStudioProjects/Android-Study-Jam-Project-1/app/src/main/res/layout/fragment_profile.xml" value="0.1" />
-        <entry key="..\:/Users/hp/AndroidStudioProjects/Android-Study-Jam-Project-1/app/src/main/res/menu/menu_item.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/Documents/Summer Internship &amp; Prep/Android-Study-Jam-Project-1/Android-Study-Jam-Project-1/app/src/main/res/drawable/ic_baseline_contact_support_24.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/ASUS/Documents/Summer Internship &amp; Prep/Android-Study-Jam-Project-1/Android-Study-Jam-Project-1/app/src/main/res/layout/activity_login_page.xml" value="0.25" />
+        <entry key="..\:/Users/ASUS/Documents/Summer Internship &amp; Prep/Android-Study-Jam-Project-1/Android-Study-Jam-Project-1/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/ASUS/Documents/Summer Internship &amp; Prep/Android-Study-Jam-Project-1/Android-Study-Jam-Project-1/app/src/main/res/layout/activity_navigation_host.xml" value="0.25" />
+        <entry key="..\:/Users/ASUS/Documents/Summer Internship &amp; Prep/Android-Study-Jam-Project-1/Android-Study-Jam-Project-1/app/src/main/res/layout/activity_sign_up.xml" value="0.2" />
+        <entry key="..\:/Users/ASUS/Documents/Summer Internship &amp; Prep/Android-Study-Jam-Project-1/Android-Study-Jam-Project-1/app/src/main/res/layout/card_event.xml" value="0.25" />
+        <entry key="..\:/Users/ASUS/Documents/Summer Internship &amp; Prep/Android-Study-Jam-Project-1/Android-Study-Jam-Project-1/app/src/main/res/layout/fragment_about.xml" value="0.25" />
+        <entry key="..\:/Users/ASUS/Documents/Summer Internship &amp; Prep/Android-Study-Jam-Project-1/Android-Study-Jam-Project-1/app/src/main/res/layout/fragment_event.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/ASUS/Documents/Summer Internship &amp; Prep/Android-Study-Jam-Project-1/Android-Study-Jam-Project-1/app/src/main/res/layout/fragment_list.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/ASUS/Documents/Summer Internship &amp; Prep/Android-Study-Jam-Project-1/Android-Study-Jam-Project-1/app/src/main/res/layout/fragment_profile.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/ASUS/Documents/Summer Internship &amp; Prep/Android-Study-Jam-Project-1/Android-Study-Jam-Project-1/app/src/main/res/menu/menu_item.xml" value="0.25" />
+        <entry key="..\:/Users/ASUS/Documents/Summer Internship &amp; Prep/Android-Study-Jam-Project-1/Android-Study-Jam-Project-1/app/src/main/res/mipmap-anydpi-v26/ic_app_launcher.xml" value="0.26614583333333336" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
 </project>

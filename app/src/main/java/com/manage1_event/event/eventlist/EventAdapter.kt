@@ -1,13 +1,16 @@
 package com.manage1_event.event.eventlist
 
+import android.provider.ContactsContract
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.lifecycle.LiveData
 import androidx.recyclerview.widget.RecyclerView
 import com.manage1_event.event.database.EventTable
 import com.manage1_event.event.databinding.CardEventBinding
 
-class EventAdapter(private val allEvents : List<EventTable>, private val listener : EventAdapter.ButtonClicked) : RecyclerView.Adapter<EventAdapter.EventViewHolder>() {
-
+class EventAdapter( private val listener : EventAdapter.ButtonClicked) : RecyclerView.Adapter<EventAdapter.EventViewHolder>() {
+   // private var allEvents = List<EventTable>
+   private val allEvents= ArrayList<EventTable>()
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): EventAdapter.EventViewHolder {
         val binding = CardEventBinding.inflate(LayoutInflater.from(parent.context), parent, false)
 
@@ -26,6 +29,13 @@ class EventAdapter(private val allEvents : List<EventTable>, private val listene
     }
 
     override fun getItemCount() = allEvents.size
+
+    fun updateList(newList : List<EventTable>) {
+
+        allEvents.clear()
+        allEvents.addAll(newList)
+        notifyDataSetChanged()
+    }
 
 
     class EventViewHolder(private var eventRowBinding : CardEventBinding) : RecyclerView.ViewHolder(eventRowBinding.root) {

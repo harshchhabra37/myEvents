@@ -1,5 +1,7 @@
 package com.manage1_event.event.database
 
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
 import androidx.room.*
 
 @Dao
@@ -13,8 +15,11 @@ interface EventDao {
     @Update
     fun update(event : EventTable)
 
+    @Query("Select * From EventTable")
+    fun getAllEvents() : List<EventTable>
+
     @Query("Select * from EventTable")
-    fun read() : List<EventTable>
+    fun read() : LiveData<List<EventTable>>
 
     @Query("Select  * from EventTable Where id = :id")
     fun getEvent(id : Int) : EventTable

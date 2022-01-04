@@ -23,7 +23,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         app:menu="@menu/menu_item"
-        android:background="#FFBD52">
+        android:background="@color/background_primary">
 
 
     </com.google.android.material.navigation.NavigationView>
