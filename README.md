@@ -1,6 +1,6 @@
-# Android-Study-Jam-Project-1
+# myEvents
 
-__Event Management__:
+Event Management
 
 __Problem Statement__:
 
@@ -29,6 +29,6 @@ __•__	Navigation Drawer: We used a navigation drawer for smooth navigation bet
 
 __Application Link & Future Scope__:
 
-The App is currently in the testing phase with a limited no. of users, You can access the App: [APP LINK HERE](either GitHub link or Google Play store link of published App or .apk file).
+The App is currently in the testing phase with a limited no. of users, You can access the App: 
 
 After the mobile application is fully tested and upgraded with a newer version, we plan to collaborate with universities and companies and also want to add some special features like where users can see events that will be happening nearby. They can suggest the events which could be organized in the future, and the user will be able to check the live location of the events through the map; for faster checkout, they can store credit or debit cards and add upcoming events to your calendar.
