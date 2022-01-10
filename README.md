@@ -1,6 +1,6 @@
 # myEvents
 
-Event Management
+Event Management 
 
 __Problem Statement__:
 
@@ -29,8 +29,10 @@ __•__	Navigation Drawer: We used a navigation drawer for smooth navigation bet
 
 __Application Link & Future Scope__:
 
-The App is currently in the testing phase with a limited no. of users, You can access the App:
-(PlayStore): https://play.google.com/store/apps/details?id=com.manage1_event.event
-(.apk link): https://drive.google.com/file/d/18tJ-kiQ27ShpoYPATbH_1_XOD9aUbcXD/view?usp=sharing
+The App is currently in the testing phase with a limited no. of users, You can access the App:<br>
+
+(PlayStore): https://play.google.com/store/apps/details?id=com.manage1_event.event<br>
+(.apk link): https://drive.google.com/file/d/18tJ-kiQ27ShpoYPATbH_1_XOD9aUbcXD/view?usp=sharing<br>
+(GitHub): https://github.com/chhabraharsh37/myEvents
 
 After the mobile application is fully tested and upgraded with a newer version, we plan to collaborate with universities and companies and also want to add some special features like where users can see events that will be happening nearby. They can suggest the events which could be organized in the future, and the user will be able to check the live location of the events through the map; for faster checkout, they can store credit or debit cards and add upcoming events to your calendar.
